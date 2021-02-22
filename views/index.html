@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My first Bulma website</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="img.jpeg" width="112" height="28">
+        </a>
+    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="/home">
+            Home
+          </a>
+    
+          <a class="navbar-item">
+            Documentation
+          </a>
+
+          <a class="navbar-item">
+            Pricing
+          </a>
+    
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+            
+            
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <a class="navbar-item">
+                Jobs
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-ghost">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-warning">
+                Log in
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <form class="box" id="createUserForm" action="/users" method="POST">
+    <fieldset id="createUserFormFieldSet" class="container">
+    <div class="whole-form">
+    <div class="field">
+      <label class="label">Name</label>
+      <div class="control">
+        <input class="input"id="name" name="name" type="text" placeholder="Text input" required>
+      </div>
+    </div>
+    
+    <div class="field">
+      <label class="label">NIN</label>
+      <div class="control has-icons-left has-icons-right">
+        <input class="input is-success" id='nin' text='nin' type="text" placeholder="Text input" required>
+        <span class="icon is-small is-left">
+          <i class="fas fa-user"></i>
+        </span>
+        <span class="icon is-small is-right">
+          <i class="fas fa-check"></i>
+        </span>
+      </div>
+      
+    </div>
+    
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control has-icons-left has-icons-right">
+        <input class="input is-danger" type="email" id='nin' name='nin' placeholder="Email input"  required>
+        <span class="icon is-small is-left">
+          <i class="fas fa-envelope"></i>
+        </span>
+        <span class="icon is-small is-right">
+          <i class="fas fa-exclamation-triangle"></i>
+        </span>
+      </div>
+
+    </div>
+    
+   
+    <div class="field">
+      <div class="control">
+        <label class="checkbox">
+          <input type="checkbox">
+          I agree to the <a href="#">terms and conditions</a>
+        </label>
+      </div>
+    </div>
+    
+
+    
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-link" id='submitCreateUserFor' onclick="submitForm()">Submit</button>
+      </div>
+      <div class="control">
+        <button class="button is-link is-light" type="reset">Cancel</button>
+      </div>
+    </div>
+  </fieldset>
+  </form>
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+</div>
+</html>
