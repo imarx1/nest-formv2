@@ -1,4 +1,4 @@
-##Steps
+## Steps
 #### Open Terminal
 `git clone <url>`
 
@@ -16,7 +16,7 @@ To start project
 `npm run start:dev`
 
 
-##CONNECTION TO DB
+## CONNECTION TO DB
 
 Look for `app.database.module.ts` in src
 Edit to your system configuration
